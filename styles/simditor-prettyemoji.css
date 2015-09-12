@@ -1,0 +1,80 @@
+.simditor .simditor-toolbar .toolbar-item-emoji span.fa {
+  color: #888;
+  font-weight: bold;
+}
+.simditor .simditor-toolbar .toolbar-menu-emoji {
+  width: 360px;
+  padding: 2px;
+  background-color: white;
+}
+.simditor .simditor-toolbar .toolbar-menu-emoji ul.emoji-category {
+  background-color: #eee;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: block;
+}
+.simditor .simditor-toolbar .toolbar-menu-emoji ul.emoji-category li {
+  float: left;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  display: block;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.simditor .simditor-toolbar .toolbar-menu-emoji ul.emoji-category li img {
+  border: none;
+  display: block;
+  margin: 2px;
+  width: 22px;
+  height: 22px;
+}
+.simditor .simditor-toolbar .toolbar-menu-emoji ul.emoji-category .selected {
+  background-color: #fdfdfd;
+}
+.simditor .simditor-toolbar .toolbar-menu-emoji div.emoji-list {
+  overflow: hidden;
+}
+.simditor .simditor-toolbar .toolbar-menu-emoji div.emoji-list ul {
+  margin: 10px 0;
+  padding: 0px 10px;
+  overflow: auto;
+  height: 270px;
+  width: 100%;
+  display: block;
+}
+.simditor .simditor-toolbar .toolbar-menu-emoji div.emoji-list ul li {
+  float: left;
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 4px;
+  display: inline-block;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.simditor .simditor-toolbar .toolbar-menu-emoji div.emoji-list ul li:hover {
+  background-color: #f0f0f0;
+}
+.simditor .simditor-toolbar .toolbar-menu-emoji div.emoji-list ul li img {
+  display: block;
+  margin: 4px;
+  width: 22px;
+  height: 22px;
+}
+
+.editor-style img[data-emoji],
+.simditor .simditor-body img[data-emoji] {
+  width: 1.1em;
+  height: 1.1em;
+  display: inline-block;
+  margin: 0;
+  padding: 0 2px;
+  vertical-align: text-top;
+  max-width: inherit;
+  box-shadow: none;
+  cursor: default;
+}
