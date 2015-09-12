@@ -17,8 +17,8 @@
     "test": "grunt test --verbose"
   },
   "dependencies": {
-    "jquery": "~2.1.0",
-    "simditor": "~2.2.4"
+    "jquery": "~2.x",
+    "simditor": "~2.2.x"
   },
   "devDependencies": {
     "grunt": "^0.4.5",

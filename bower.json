@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "homepage": "https://github.com/qiujuer/Simditor-PrettyEmoji",
   "authors": [
-    "qiujuer <qiujuer@mylive.com>"
+    "qiujuer <qiujuer@live.com>"
   ],
   "description": "A simditor pretty emoji plugin",
   "main": "lib/simditor-emoji.js",
@@ -25,6 +25,6 @@
   "dependencies": {
     "font-awesome": "fontawesome#~4.4.0",
     "jquery": "~2.1.0",
-    "simditor": "~2.2.4"
+    "simditor": "~2.2.x"
   }
 }
