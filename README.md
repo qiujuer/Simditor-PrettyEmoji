@@ -11,8 +11,10 @@ Insert emoji img to Simditor content.
 
 Click [github](https://github.com/qiujuer/Simditor-PrettyEmoji/releases) to download the zip file. You can also install Simditor by bower and npm :
 
+```
 $ npm install simditor-prettyemoji
 $ bower install simditor-prettyemoji
+```
 
 
 ### Usage
