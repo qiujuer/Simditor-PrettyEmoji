@@ -1,52 +1,64 @@
-# Simditor PrettyEmoji
+# Simditor Prettyemoji
 
-[Simditor](http://simditor.tower.im/) 的表情扩展，为工具栏提供按钮，在内容中插入 Emoji 图片。
+A pretty emoji plugin for [Simditor](http://simditor.tower.im/).
+Insert emoji img to Simditor content.
 
-###如何使用
+![Demo](/art/demo1.png)
+![Demo](/art/demo2.png)
 
-在 Simditor 的基础上额外引用 simditor-prettyemoji 的脚本和样式
+
+### Download
+
+Click [github](https://github.com/qiujuer/Simditor-PrettyEmoji/releases) to download the zip file. You can also install Simditor by bower and npm :
+
+$ npm install simditor-prettyemoji
+$ bower install simditor-prettyemoji
+
+
+### Usage
+
+Reference button and dependency script on your page with Simditor:
 
 ```html
 <link rel="stylesheet" type="text/css" href="/assets/stylesheets/simditor-prettyemoji.css" />
 <script src="/assets/javascripts/simditor-prettyemoji.js"></script>
 ```
 
-配置
+Add prettyemoji button config when you initialize Simditor:
 
 ```javascript
 new Simditor({
-	textarea: textareaElement,
-	...,
+	textarea:  $('#txt-editor'),
 	toolbar: [..., 'emoji'],
 	emoji: {
-    autoClose: true,
+        autoClose: true,
 		imagePath: 'images/emoji/',
-    categories: ["face","fashion","animal","food","travel","time","work","font","tool","other"]
+        categories: ["face","fashion","animal","food","travel","time","work","font","tool","other"]
 	}
 })
 ```
 
-###参数
+### Parameters
 
 **autoClose** (Type: Bool)
 
-emoji 选中后是否自动关闭弹出框
+Automatically close the pop-up box after selecting the emoji.
 
-默认值: `true`
+Default: `true`
 
 
 **imagePath** (Type: String)
 
-emoji 图片的路径，相对或者绝对路径都可以
+Prettyemoji's emojies img path, you can use relative paths or absolute paths.
 
-默认值: `'images/emoji/'`
+Default: `'images/emoji/'`
 
 
 **categories** (Type: Array)
 
-按钮菜单中提供哪些 emoji 类别供用户选择
+Prettyemoji's categories.
 
-默认值: `[
+Default: `[
     "face",
     "fashion",
     "animal",
@@ -58,3 +70,17 @@ emoji 图片的路径，相对或者绝对路径都可以
     "tool",
     "other"
   ]`
+
+
+
+### Demo
+
+Show demo, you need run in command:
+
+```
+bower install
+npm install
+grunt
+```
+
+Then, open `demo.html`.
